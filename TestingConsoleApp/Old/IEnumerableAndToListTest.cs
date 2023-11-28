@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestingConsoleApp
+namespace TestingConsoleApp.Old
 {
     public class IEnumerableAndToListTest
     {
@@ -15,7 +15,7 @@ namespace TestingConsoleApp
             IEnumerable<int> doubledNumbers = numbers.Select(GetDouble).ToList();
 
 
-            Console.WriteLine($"Min: {doubledNumbers.Min()}" );
+            Console.WriteLine($"Min: {doubledNumbers.Min()}");
 
             Console.WriteLine($"Max: {doubledNumbers.Max()}");
 

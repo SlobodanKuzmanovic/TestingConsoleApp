@@ -5,7 +5,9 @@ using static System.Net.WebRequestMethods;
 
 Console.WriteLine("Hello, World!");
 
-IEnumerableAndToListTest.TestAll();
+TryCatchTest.Test();
+
+TryCatchTest.TrigerExceptionTest();
 
 Console.ReadKey();
 
