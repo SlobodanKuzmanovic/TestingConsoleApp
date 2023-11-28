@@ -1,17 +1,17 @@
 ﻿using System;
 using TestingConsoleApp;
+using TestingConsoleApp.Old;
 using static System.Net.WebRequestMethods;
 
 Console.WriteLine("Hello, World!");
 
-OutMethodTest test = new OutMethodTest();
-string outStr = "";
-test.TestOutMethod(out outStr);
+Class1 class1 = new Class1();
 
-Console.WriteLine(outStr);
-Console.WriteLine(test.TestOutMethod(out outStr));
+Console.WriteLine(class1.Test());
 
+class1 = new Class2();
 
+Console.WriteLine(class1.Test());
 
 
 
