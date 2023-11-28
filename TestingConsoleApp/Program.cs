@@ -5,15 +5,10 @@ using static System.Net.WebRequestMethods;
 
 Console.WriteLine("Hello, World!");
 
-Class1 class1 = new Class1();
 
-Console.WriteLine(class1.Test());
-
-class1 = new Class2();
-
-Console.WriteLine(class1.Test());
-
-
-
+        testInterface1 obj1 = new Abc();
+        testInterface2 obj2 = new Abc();
+        obj1.Show();
+        obj2.Show();
 
 Console.ReadKey();
