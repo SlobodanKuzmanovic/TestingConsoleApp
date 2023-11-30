@@ -5,7 +5,7 @@ using static System.Net.WebRequestMethods;
 
 Console.WriteLine("Hello, World!");
 
-CopyCloneArrayTest.TestObjeccts();
+var temp = EndingOfString.TrueSolution("abc", "abcd");
 
 Console.ReadKey();
 

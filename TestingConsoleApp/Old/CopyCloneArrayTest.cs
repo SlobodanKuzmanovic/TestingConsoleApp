@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestingConsoleApp
+namespace TestingConsoleApp.Old
 {
     public class CopyCloneArrayTest
     {
@@ -18,9 +18,9 @@ namespace TestingConsoleApp
             copyNumbers[2] = 5;
             cloneNumbers[2] = 5;
             Console.WriteLine("### - Normal");
-            foreach ( var number in numbers )
+            foreach (var number in numbers)
             {
-                Console.WriteLine( number );
+                Console.WriteLine(number);
             }
 
             Console.WriteLine("### - Copyed");
@@ -92,7 +92,7 @@ namespace TestingConsoleApp
         public Student(int id, string name)
         {
             this.id = id;
-            this.Name = name;   
+            Name = name;
         }
     }
 }
