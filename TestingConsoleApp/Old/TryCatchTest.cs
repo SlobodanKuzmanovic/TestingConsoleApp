@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestingConsoleApp
+namespace TestingConsoleApp.Old
 {
     public static class TryCatchTest
     {
-        public static void Test () 
+        public static void Test()
         {
             int x = 0;
             int div = 0;
