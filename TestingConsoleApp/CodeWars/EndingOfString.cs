@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestingConsoleApp
+namespace TestingConsoleApp.CodeWars
 {
     public class EndingOfString
-    { 
+    {
         public static bool Solution(string str, string ending)
         {
             if (ending.Length > str.Length)
