@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace TestingConsoleApp
 {
@@ -7,33 +8,14 @@ namespace TestingConsoleApp
     {
         public static bool ValidatePin(string pin)
         {
-            pin = pin.Replace("\n", "").Replace("\t", "");
+            var tempArr = pin.Where(x => !Char.IsDigit(x)).ToList();
 
-            pin.Contains("\n");
+            if(tempArr.Count == 0 && (pin.Length == 4 || pin.Length == 6))
+            {
+                return true;
+            }
 
-            if (pin.Length == 4 || pin.Length == 6)
-            {
-                try
-                {
-                    var pinInt = Convert.ToInt32(pin);
-                    if (pinInt > 0)
-                    {
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
-                catch
-                {
-                    return false;
-                }
-            }
-            else
-            {
-                return false;
-            }
+            return false;
         }
     }
 }
