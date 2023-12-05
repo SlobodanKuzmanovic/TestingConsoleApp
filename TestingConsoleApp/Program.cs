@@ -6,7 +6,8 @@ using static System.Net.WebRequestMethods;
 
 Console.WriteLine("Hello, World!");
 
-IntToByteSum1.Test(1234);
+var temp = Regex_validate_PIN_code.ValidatePin("123");
+Console.WriteLine(temp);
 
 Console.ReadKey();
 

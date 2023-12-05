@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Numerics;
 
-namespace TestingConsoleApp
+namespace TestingConsoleApp.CodeWars
 {
     public class IntToByteSum1
     {
