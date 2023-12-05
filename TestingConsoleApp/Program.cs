@@ -6,7 +6,8 @@ using static System.Net.WebRequestMethods;
 
 Console.WriteLine("Hello, World!");
 
-var temp = Regex_validate_PIN_code.ValidatePin("123");
+var temp = LongestSubstringNoRepete.LongestSubstring("GEEKSFORGEEKS");
+
 Console.WriteLine(temp);
 
 Console.ReadKey();
