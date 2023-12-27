@@ -6,14 +6,17 @@ using static System.Net.WebRequestMethods;
 
 Console.WriteLine("Hello, World!");
 
-//var a = await YahooAPI.TestAsync();
+var n = Convert.ToInt32(Console.ReadLine());
+var strArry = Console.ReadLine();
 
-string name = "sandeep";
-string myName = name;
-Console.WriteLine("== operator result is {0}", name == myName);
-Console.WriteLine("Equals method result is {0}", name.Equals(myName));
+var arr = strArry.Split(' ').Select(x => Convert.ToInt32(x)).ToList();
+
+var orderedArr = arr.GroupBy(x => x).OrderByDescending(x => x.Count()).ToList();
+
+Console.WriteLine(n);
+
+
 Console.ReadKey();
 
 
-Console.ReadKey();
 
