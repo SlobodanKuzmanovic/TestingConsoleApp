@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestingConsoleApp
+namespace TestingConsoleApp.CodeWars
 {
     public class LongestSubstringNoRepete
     {

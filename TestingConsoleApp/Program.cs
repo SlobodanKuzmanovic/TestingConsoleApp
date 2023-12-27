@@ -6,9 +6,14 @@ using static System.Net.WebRequestMethods;
 
 Console.WriteLine("Hello, World!");
 
-var temp = LongestSubstringNoRepete.LongestSubstring("GEEKSFORGEEKS");
+//var a = await YahooAPI.TestAsync();
 
-Console.WriteLine(temp);
+string name = "sandeep";
+string myName = name;
+Console.WriteLine("== operator result is {0}", name == myName);
+Console.WriteLine("Equals method result is {0}", name.Equals(myName));
+Console.ReadKey();
+
 
 Console.ReadKey();
 
