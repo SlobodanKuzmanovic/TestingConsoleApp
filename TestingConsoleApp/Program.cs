@@ -6,14 +6,12 @@ using static System.Net.WebRequestMethods;
 
 Console.WriteLine("Hello, World!");
 
-var n = Convert.ToInt32(Console.ReadLine());
-var strArry = Console.ReadLine();
+int[] a = { 5, 7, 10, 5, 15 };
+int[] b = { 2, 2, 1, 3, 5 };
 
-var arr = strArry.Split(' ').Select(x => Convert.ToInt32(x)).ToList();
+int steps = StepCountToEqualElementOfArray.MinStepsToMakeEqual(a, b);
+Console.WriteLine($"Minimum steps to make all elements equal: {steps}"); 
 
-var orderedArr = arr.GroupBy(x => x).OrderByDescending(x => x.Count()).ToList();
-
-Console.WriteLine(n);
 
 
 Console.ReadKey();
